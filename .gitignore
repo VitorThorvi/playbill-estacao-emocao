@@ -1,1 +1,12 @@
 cnfg.rtf
+
+# macOS filesystem files
+.DS_Store
+
+# local config files
+
+.firebase/
+.idea/
+
+# not to expose firebase infos
+.firebaserc

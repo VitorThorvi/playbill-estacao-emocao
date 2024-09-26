@@ -1,0 +1,60 @@
+/* global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+/* sections */
+section {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+#visual_id {
+    width: 100%;
+    height: auto;
+}
+
+#visual_id img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* smartphone screen ratio (18:9) */
+@media only screen and (max-aspect-ratio: 18/9), (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+/* style for signature */
+.signature {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 2em;
+}
