@@ -3,10 +3,23 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    font-size: 18px;
 }
 
 h1 {
     font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 0.8em;
     margin-bottom: 0.5em;
 }
 
@@ -15,7 +28,16 @@ p {
     text-align: justify;
 }
 
-/* sections */
+ul {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Seções */
 section {
     padding: 20px;
     box-sizing: border-box;
@@ -45,10 +67,18 @@ section {
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
-    p {
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    p, li {
         font-size: 1em;
     }
 
