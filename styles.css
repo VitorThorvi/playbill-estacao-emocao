@@ -31,13 +31,14 @@ p {
 ul {
     margin-left: 20px;
     margin-bottom: 1em;
+    list-style-type: none; /* remove bullet points */
 }
 
 li {
     margin-bottom: 0.5em;
 }
 
-/* Seções */
+/* sections */
 section {
     padding: 20px;
     box-sizing: border-box;
@@ -55,13 +56,55 @@ section {
     display: block;
 }
 
-/* Style for sobre o espetáculo*/
+/* style para sobre o espetáculo*/
 #sobre_o_espetaculo {
     background-color: #f9f9f9;
 }
 
+/* style para patrocínio */
+#patrocinio {
+    text-align: center;
+}
+
+.patrocinadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Mantém os nomes alinhados no topo */
+}
+
+.patrocinador {
+    flex: 1 1 45%;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.patrocinador p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+.patrocinador img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 /* smartphone screen ratio (18:9) */
 @media only screen and (max-aspect-ratio: 18/9), (max-width: 600px) {
+    .patrocinador {
+        flex: 1 1 16%;
+    }
+
     body {
         font-size: 16px;
     }
@@ -87,9 +130,4 @@ section {
     }
 }
 
-/* style for signature */
-.signature {
-    text-align: right;
-    font-weight: bold;
-    margin-top: 2em;
-}
+
